@@ -1,0 +1,264 @@
+<div class="3colrow" style="border-style:solid">
+    <div class="col">
+    	<label>&nbsp;&nbsp;Name:</label><input type="text" name="attr_charactername" />
+		<label>&nbsp;&nbsp;Nationality:</label><input type="text" name="attr_nationality" />
+		<label>&nbsp;&nbsp;Profession:</label><input type="text" name="attr_profession" />
+		<label>&nbsp;&nbsp;Education:</label><input type="text" name="attr_education" />
+	</div>
+	<!--
+	<div class="col">
+		<img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/kitchensink/logo.png" />
+	</div>
+	-->
+	<div class="col">
+		<img src="https://cf.geekdo-images.com/9zQu1iIpFPNKJv9Unl1g2A__imagepage/img/bUCmfuVpiqZV7lfYuxp5_J8W_z8=/fit-in/900x600/filters:no_upscale():strip_icc()/pic1098368.png" />
+		<br />
+		<br />
+		<label>Insight Points</label><input type="number" min="0" class="sheet-short">
+		<label></label>
+	</div>
+	<div class="col">
+		<label>Age:</label><input type="text" name="attr_age" />
+		<label>Height:</label><input type="text" name="attr_height" />
+		<label>Weight:</label><input type="text" name="attr_weight" />
+		<label>Hair:</label><input type="text" name="attr_hair" />
+		<label>Eyes:</label><input type="text" name="attr_eyes" />
+	</div>
+</div>
+<hr />
+<div class="3colrow" style="border-style:solid">
+	<div class="col">
+		<h2>Attributes</h2>
+		<label>&nbsp;&nbsp;Strength </label><input type="number" name='attr_strength' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+		<table>
+			<tr>
+				<td>Strength (negative = "success")</td>
+				</td>[[1d100 - @{strength}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+		<label>&nbsp;&nbsp;Dexterity </label><input type="number" name='attr_dexterity' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}}
+ 		<table>
+			<tr>
+				<td>Dexterity (negative = "success")</td>
+				</td>[[1d100 - @{dexterity}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+		<label>&nbsp;&nbsp;Agility </label><input type="number" name='attr_agility' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Agility (negative = "success")</td>
+				</td>[[1d100 - @{agility}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+		<label>&nbsp;&nbsp;Personality </label><input type="number" name='attr_personality' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Personality (negative = "success")</td>
+				</td>[[1d100 - @{personality}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+	</div>
+	<div class="col">
+		<h2>&nbsp;</h2>
+		<label>Perception </label><input type="number" name='attr_perception' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Perception (negative = "success")</td>
+				</td>[[1d100 - @{perception}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+		<label>Willpower </label><input type="number" name='attr_willpower' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Willpower (negative = "success")</td>
+				</td>[[1d100 - @{willpower}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+		<label>Luck </label><input type="number" name='attr_luck' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Luck (negative = "success")</td>
+				</td>[[1d100 - @{Luck}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+		<label>Stamina </label><input type="number" name='attr_stamina' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Stamina (negative = "success")</td>
+				</td>[[1d100 - @{stamina}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+	</div>
+	<div class="col">
+		<h2>Derived Stats</h2>
+		<label>Unskilled Melee </label><input type="number" name='attr_unskilled' class='sheet-short'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Unskilled Melee (negative = "success")</td>
+				</td>[[1d100 - @{unskilled}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+		<label>Sense Unknown </label><input type="number" name='attr_senseunknown' class='sheet-short' readonly='true'>
+        <button class='old-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>Sense Unknown (negative = "success")</td>
+				</td>[[1d100 - @{senseunknown}]]</td>
+			</tr>
+		</table>
+		'></button><span class='dee'></span>
+        <br />
+
+		<!--
+        <div class="stats">
+            <h3>Base</h3><h3>Max</h3>
+            <label>Pace</label><input type="text" name="attr_pace" /><input type="text" name="attr_pace_max"  />
+            <label>Parry</label><input type="text" name="attr_parry" /><input type="text" name="attr_parry_max" />
+            <label>Toughness</label><input type="text" name="attr_toughness"  /><input type="text" name="attr_toughness_max"  />
+            <label>Charisma</label><input type="text" name="attr_charisma" " /><input type="text" name="attr_charisma_max"  />
+        </div>
+		-->
+	</div>
+	</div>
+	<hr />
+	<div class="stats" style="border-style:solid">
+	<h2>Skills</h2>
+        <fieldset class="repeating_skills">
+            <h3>&nbsp;&nbsp;Name </h3>&nbsp;<input type="text" name="attr_skillname" />
+            <h3>Level </h3>&nbsp;<select name="attr_SkillRank" class="dtype">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="master">Master</option>
+            </select>
+			<h3>Base </h3>&nbsp;<input type="number" name="attr_skillbase" />
+			<h3>Score </h3>&nbsp;<input type="number" name="attr_skillscore" />
+		   <button class='new-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+			<table>
+				<tr>
+					<td>@{skillname} (negative = "success")</td>
+					</td>[[1d100 - @{skillscore}]]</td>
+				</tr>
+			</table>
+			'></button>
+        </fieldset>
+	</div>
+	<hr />
+	<div class="stats" style="border-style:solid">
+	<h2>Disciplines of the Art</h2>
+	<fieldset class="repeating_disciplines">
+	<h3>&nbsp;&nbsp;Discipline </h3>&nbsp;<input type="text" name="attr_disciplinename" />
+	<h3>Base </h3>&nbsp;<input type="text" name="attr_disciplinebase" />
+	<h3>Score </h3>&nbsp;<input type="number" name="attr_disciplinescore" />
+	<button class='new-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>@{disciplinename} (negative = "success")</td>
+				</td>[[1d100 - @{disciplinescore}]]</td>
+			</tr>
+		</table>
+	'></button>
+	</fieldset>
+	</div>
+	<hr />
+	<div class="stats" style="border-style:solid">
+	<h2>Weapons</h2>
+	<fieldset class="repeating_weapons">
+	<h3>&nbsp;&nbsp;Name </h3>&nbsp;<input type="text" name="attr_weaponname" />
+	<h3>Range </h3>&nbsp;<input type="text" name="attr_weaponrange" />
+	<h3>Base </h3>&nbsp;<input type="number" name="attr_weaponbase" />
+	    <button class='new-roll' type='roll' name='roll_testattack' value='&{template:default} {{name=@{character_name}}} 
+ 		<table>
+			<tr>
+				<td>@{weaponname} (negative = "success")</td>
+				</td>[[1d100 - @{weaponbase}]]</td>
+			</tr>
+		</table>
+		'></button>
+	</fieldset>
+	</div>
+	<hr/>
+	<div style="border-style:solid" class="2colrow">
+	<div class="col">
+	<h2>Wounds</h2>
+	<table>
+	<tr><td>&nbsp;&nbsp;Scratches </td><td><input type="checkbox" name="attr_cbscratch1"></td><td><input type="checkbox" name="attr_cbscratch2"></td></tr>
+	<tr><td>&nbsp;&nbsp;Light </td><td><input type="checkbox" name="attr_cblight1"></td><td><input type="checkbox" name="attr_cblight2"></td></tr>
+	<tr><td>&nbsp;&nbsp;Medium </td><td><input type="checkbox" name="attr_cbmedium1"></td><td><input type="checkbox" name="attr_cbmedium2"></td></tr>
+	<tr><td>&nbsp;&nbsp;Heavy </td><td><input type="checkbox" name="attr_cbheavy1"></td><td><input type="checkbox" name="attr_cbheavy2"></td></tr>
+	<tr><td>&nbsp;&nbsp;Critical </td><td colspan="2" style="text-align:center"><input type="checkbox" name="attr_cbcritical"></td></tr>
+	</table>
+	</div>
+	<div class="col" class="stats">
+	<h2>Current</h2>
+		<label>Stamina </label><input type="number" name='attr_currentstamina' class='sheet-short'>
+		<br/>
+		<label>Willpower </label><input type="number" name='attr_currentwillpower' class='sheet-short'>	
+		<br />
+		<label>Stamina lost to wounds </label><input type="number" name='attr_currentlosttowounds' class='sheet-short'>
+		<br />
+		<label>Regen. rate per round </label><input type="number" name='attr_currentregenround' class='sheet-short'>
+		<br />
+		<label>Regen. rate per day </label><input type="number" name='attr_currentregenday' class='sheet-short'>
+	</div>
+	</div>
+</div>
+
+<script type="text/worker">
+on("change:perception", function (eventinfo) {
+	getAttrs(["perception"], function(values) {
+	var theval = values.perception;
+	var newval = parseInt(theval / 5);
+	setAttrs({"senseunknown": newval});
+	});
+});
+
+on("add:stamina change:stamina", function(eventinfo) {
+	getAttrs(["stamina"], function(values) {
+	var theval = values.stamina;
+	var sregen = 0;
+	switch(theval) {
+	case 16:
+	sregen = 1;
+	break;
+	default:
+	sregen = 99;
+	break;
+	}
+	setAttrs({"currentstamina": theval, "currentregenround": sregen});
+	});
+});
+
+on("add:willpower change:willpower", function(eventinfo) {
+	getAttrs(["willpower"], function(values) {
+	var theval = values.stamina;
+	setAttrs({"currentwillpower": theval});
+	});
+});
+</script>
